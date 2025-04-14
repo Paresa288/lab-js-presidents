@@ -422,14 +422,18 @@ const presidents = [
 function getNames(presidentsArr) {
   return presidentsArr.map ((presidents) => {
     return presidents.name;
-  })
+  });
 }
 
 
 
 
 // Iteration 2 | Democratic Presidents - `filter()`
-function getDemocraticPresidents(presidentsArr) {}
+function getDemocraticPresidents(presidentsArr) {
+  return presidentsArr.filter ((presidents) =>  {
+    return presidents.party === "Democratic";
+  });
+}
 
 
 
